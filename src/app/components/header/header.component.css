@@ -1,0 +1,25 @@
+
+.header{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  height: 4em;
+  padding: 0 1em;
+
+  background-color: lightgray;
+  color: black;
+}
+
+.header a{
+  height: 80%;
+  aspect-ratio: 1;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header a:hover{
+  background-color: rgba(255, 255, 255, 0.489);
+  border-radius: 0.5em;
+}
