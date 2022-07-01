@@ -11,7 +11,8 @@ export class HeaderComponent implements OnInit {
   faArrowLeft = faArrowLeft;
   faEllipsisVertical = faEllipsisVertical;
 
-  @Input() title = "Yobruv";
+  @Input() title:string = "Yobruv";
+  @Input() settingBtn:boolean = true;
 
   constructor() { }
 
