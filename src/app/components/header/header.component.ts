@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { faArrowLeft, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -11,10 +12,15 @@ export class HeaderComponent implements OnInit {
   faArrowLeft = faArrowLeft;
   faEllipsisVertical = faEllipsisVertical;
 
+  goBack = () => {
+    this._location.back();
+  };
+
   @Input() title:string = "Yobruv";
   @Input() settingBtn:boolean = true;
+  @Input() goBackBtn:boolean = true;
 
-  constructor() { }
+  constructor(private _location: Location) { }
 
   ngOnInit(): void {
   }
